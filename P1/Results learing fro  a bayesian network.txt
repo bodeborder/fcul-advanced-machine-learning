@@ -1,0 +1,31 @@
+BicScore:
+[('cigsPerDay', 'Sex'), ('BPMeds', 'prevalentHyp'), ('prevalentHyp', 'diaBP'), ('prevalentHyp', 'sysBP'), ('prevalentHyp', 'age'), ('prevalentHyp', 'diabetes'), ('prevalentHyp', 'prevalentStroke')] 
+
+
+K2 Score:
+[('Sex', 'BMI'), ('cigsPerDay', 'Sex'), ('BPMeds', 'prevalentStroke'), ('BPMeds', 'totChol'), ('BPMeds', 'Sex'), ('prevalentStroke', 'BMI'), ('prevalentHyp', 'diaBP'), ('prevalentHyp', 'BPMeds'), ('prevalentHyp', 'age'), ('diabetes', 'glucose'), ('diabetes', 'sysBP'), ('diabetes', 'BMI'), ('sysBP', 'prevalentHyp'), ('sysBP', 'BMI')]
+
+BDeu Score:
+
+[('Sex', 'BPMeds'), ('cigsPerDay', 'Sex'), ('BPMeds', 'prevalentStroke'), ('prevalentHyp', 'sysBP'), ('prevalentHyp', 'diaBP'), ('prevalentHyp', 'BPMeds'), ('prevalentHyp', 'age'), ('prevalentHyp', 'prevalentStroke'), ('diabetes', 'prevalentHyp'), ('glucose', 'diabetes')]
+
+Constraint PC:
+OutEdgeView([('cigsPerDay', 'totChol'), ('age', 'totChol'), ('sysBP', 'BMI')])
+
+
+Part 1 of the hybrid model:
+Skeleton: 
+ [('Sex', 'prevalentStroke'), ('Sex', 'age'), ('age', 'sysBP'), ('age', 'prevalentStroke'), ('cigsPerDay', 'totChol'), ('BPMeds', 'prevalentStroke'), ('prevalentHyp', 'sysBP'), ('diabetes', 'sysBP'), ('totChol', 'sysBP'), ('sysBP', 'glucose'), ('sysBP', 'diaBP'), ('BMI', 'glucose')]
+
+Part 2) Model Bic:    
+ [('prevalentHyp', 'sysBP')]
+Part 2) Model K2:    
+ [('prevalentStroke', 'BPMeds'), ('prevalentStroke', 'age'), ('diabetes', 'sysBP'), ('sysBP', 'prevalentHyp'), ('glucose', 'BMI')]
+Part 2) Model BDeu:   
+  [('prevalentStroke', 'BPMeds'), ('prevalentHyp', 'sysBP')]
+
+
+
+
+BESMODEL FOUND:
+[('Sex', 'BMI'), ('Sex', 'TenYearCHD'), ('cigsPerDay', 'Sex'), ('BPMeds', 'prevalentStroke'), ('BPMeds', 'totChol'), ('BPMeds', 'Sex'), ('prevalentStroke', 'BMI'), ('prevalentHyp', 'diaBP'), ('prevalentHyp', 'BPMeds'), ('prevalentHyp', 'age'), ('prevalentHyp', 'TenYearCHD'), ('diabetes', 'glucose'), ('diabetes', 'BMI'), ('sysBP', 'prevalentHyp'), ('sysBP', 'BMI'), ('TenYearCHD', 'diabetes')]

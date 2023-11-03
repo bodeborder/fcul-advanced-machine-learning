@@ -1,5 +1,5 @@
 # Advanced Machine Learning
-We will be deploying here our advanced machine learning projects troughout the course.
+We will be deploying here our advanced machine learning projects throughout the course.
 
 ## Project 1 statement 
 

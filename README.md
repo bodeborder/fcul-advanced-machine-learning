@@ -7,6 +7,6 @@ We will be deploying here our advanced machine learning projects throughout the 
 
 ## Project 2 statement 
 
-
+[Here](https://github.com/bodeborder/fcul-advanced-machine-learning/blob/main/P2/P2_project_statement.pdf)
 
 ## Project 3 statement 
